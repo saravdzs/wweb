@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+        <meta charset="UTF-8">
+        <title>Semana ultural</title>
+        <style>
+            body{background-color: bisque;
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                color: #333;
+            }
+            h1,h2,h3{
+                color: blueviolet;
+            }
+            #titulo_programa{
+                color: blue;
+            }
+            table {
+                border: 2px solid blue;
+                background-color: aliceblue;
+                color: blue;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                border: 1px solid blue;
+                padding: 8px; 
+                text-align: center;
+            }
+            #faq-container {
+                border: 3px solid salmon;
+                background-color: antiquewhite;
+                width: 400px;
+                padding: 15px;
+                box-sizing: border-box;
+            }
+            .mapa-container iframe{
+                border: 3px;
+                background-color: antiquewhite;
+                width: 400px;
+                padding: 15px;
+                box-sizing: border-box;
+            }
+            datalist{
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+            summary{
+                font-weight: bold;
+                outline: none;
+            }
+            .faq-content{
+                padding: 5px 0 10px 15px;
+            }
+            .galeria-ficticia{
+                display: flex;
+                gap: 10px;
+            }
+            img-placeholder {
+                width: 150px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                font-size: 14px;
+            }   
+            .bg-teatro { background-color: #9b59b6; }
+            .bg-robotica { background-color: #2ecc71; }
+            .bg-concierto { background-color: #d35400; }
+            a {
+                color: #0066cc;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .footer-links {
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+            <h1>Semana Cultural 2026</h1>
+            <br>
+            <nav>
+                <a href="#programa"> Programa</a>
+                <a href="#galeria">galeria</a>
+                <a href="mapa">Mapa</a>
+                <a href="FAQ">FAQ</a>
+            </nav>
+            <section id="programa">
+                <h2 id="titulo_programa">Programa</h2>
+                <table border="1">
+                    <caption>Tabla de Datos</caption>
+                        <tr>
+                            <th>Franja</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miercoles</th>
+                        </tr>
+                        <tr>
+                            <th>Mañana</th>
+                            <td>Inauguracion</td>
+                            <td colspan="2">Tornro de ajedrez</td>
+                        </tr>
+                        <tr>
+                            <th>Tarde</th>
+                            <td>Teatro</td>
+                            <td>Taller de robotica</td>
+                            <td>Concierto</td>
+                        </tr>
+                </table>
+            </section>
+        <br>
+        <section id="video-audio">
+            <h2>Video promocional</h2>
+            <video controls width="640" poster="portada.jpg">
+                <source  src="video/semana_cultural.mp4" type="video/mp4">
+                Tu navegador no soporta vídeo HTML5.
+            </video>
+            <br>
+            <h2>Sintonia del Centro</h2>
+            <audio controls preload="none">
+                <source src="audio/sintonia.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+         <section id="galeria">
+            <h2>Galeria</h2>
+                <div>
+                    <div class="img-placeholder bg-teatro"><img src="teatro.jpg" alt="Representación de la obra de Teatro escolar" style="display:none;">Teatro</div>
+                    <div class="img-placeholder bg-robotica"><img src="robotica.jpg" alt="Alumnos programando en el Taller de robótica" style="display:none;">Taller de robótica</div>
+                    <div class="img-placeholder bg-concierto"><img src="concierto.jpg" alt="Concierto de música en directo del miércoles" style="display:none;">Concierto</div>
+                </div>
+         </section>
+        <br>
+        <section id="mapa">
+            <h2>Cómo llegar</h2>
+            <div class="mapa-container">
+                <iframe 
+                    src="https://google.com" 
+                    width="400" 
+                    height="300" 
+                    title="Ubicación del Instituto de Educación Secundaria" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+        <section id="faq">
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-container">
+                <details name="faq">
+                    <summary>¿Quién puede participar?</summary>
+                    <div class="faq-content">Todo el alumnado del centro.</div>
+                </details>
+
+                <details name="faq">
+                    <summary>¿Las actividades son gratuitas?</summary>
+                    <div class="faq-content">Sí, todas.</div>
+                </details>
+
+                <details name="faq">
+                    <summary>¿Puedo traer invitados?</summary>
+                    <div class="faq-content">Solo al concierto del miércoles.</div>
+                </details>
+
+                <details name="faq">
+                    <summary>¿Hay que inscribirse?</summary>
+                    <div class="faq-content">
+                        Solo en el taller de robótica.<br><br>
+                        Plazas ocupadas (45 de 60):
+                        <progress value="45" max="60"></progress>
+                    </div>
+                </details>
+
+            </div>  
+        </section>
+        <div class="footer-links">
+            <p><a href="mailto:cultural@instituto.es">Escríbenos</a></p>
+            <p><a href="https://instituto.es" target="_blank" rel="noopener noreferrer">Web del Centro</a></p>
+        </div>
+    </body>
+</html>

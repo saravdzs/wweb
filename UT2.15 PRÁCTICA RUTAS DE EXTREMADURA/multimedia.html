@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logotipo">
+        <h1>Sendas de Extremadura</h1>
+        <p>club de senderismo desde 2015 </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="rutas.html">Rutas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Multimedia</h2>
+        <p>Ir a: <a href="#galeria">Galería</a> | <a href="#video">Vídeo</a> | <a href="#sonidos">Sonidos</a> | <a href="#mapa">Mapa</a></p>
+    
+    <section id="galeria">
+        <h2>Galería de fotos</h2>
+        <figure>
+            <picture>
+                <img src="imagenes/monfrague.jpeg" alt="Parque Nacional de Monfragüe">
+            </picture>
+            <figcaption>Parque Nacional de Monfragüe.</figcaption>
+        </figure>
+
+        <figure>
+            <picture>
+                <img src="imagenes/valleJerte.jpg" alt="Valle del Jerte en primavera">
+            </picture>
+            <figcaption>Valle del Jerte en primavera.</figcaption>
+        </figure>
+
+        <figure>
+            <picture>
+                <img src="imagenes/villuercas.jpg" alt="VGeoparque Villuercas-Ibores-Jara">
+            </picture>
+            <figcaption>Geoparque Villuercas-Ibores-Jara.</figcaption>
+        </figure>
+        
+        <figure>
+            <picture>
+                <img src="imagenes/Sierra-de-Gata-en-Caceres.jpg" alt="Sierra de Gata.">
+            </picture>
+            <figcaption>Sierra de Gata.</figcaption>
+        </figure>
+        
+    </section>
+    <section id="video">
+        <h2>Vídeo de presentación</h2>
+        <figure>
+            <video controls width="640" height="360" poster="imagenes/poster-video.jpg" preload="metadata">
+                <source src="media/rutas-extremadura.mp4" type="video/mp4">
+                <source src="media/rutas-extremadura.webm" type="video/webm">
+                <track kind="subtitles" src="media/subtitulos.vtt" srclang="es" label="Español" default>
+                Tu navegador no puede reproducir video. <a href="media/rutas-extremadura.mp4" download> Descarga el video</a>
+            </video>
+            <figcaption>Las cuatro rutas estrella del club en 12 segundos.</figcaption>
+        </figure>
+        <h3>Solo el Valle del Jerte</h3>
+            <video controls width="320" height="180" preload="metadata">
+                <source src="media/rutas-extremadura.mp4#4,6" type="video/mp4">
+                Tu navegador no puede reproducir video.
+            </video>
+    </section>
+    <section id="sonidos">
+        <h2>Sonidos de la naturaleza</h2>
+        <p>Escucha el río y los pájaros antes de salir de ruta:</p>
+        <audio controls preload="metadata">
+            <source src="media/sonidos-naturaleza.mp3" type="audio/mpeg">
+            <source src="media/sonidos-naturaleza.ogg" type="audio/ogg">
+            Tu navegador no puede reproducir audio.
+        </audio>
+    </section>
+    <section id="mapa">
+        <h2>Mapa de Monfragüe</h2>
+        <iframe src = https://www.openstreetmap.org/export/embed.html?bbox=-6.10%2C39.80 %2C-5.95%2C39.89&amp;layer=mapnik&amp;marker=39.8456%2C-6.03 06 frameborder="0"></iframe>
+         <p><a href="https://openstreetmap.org" target="_blank" rel="noopener noreferrer"> Ver el mapa a pantalla completa</a></p>
+    </section>
+    <section>
+        <h2>Reto del club</h2>
+        <p>
+            Kilómetros recorridos este año:
+            <progress max="500" value="320">320 de 500 km</progress>
+        </p>
+        <button type="button"  onclick="document.getElementById('modal-seguridad').showModal()"> Ver consejo de seguridad</button>
+            <dialog>
+                <h3>Consejo de seguridad.</h3>
+                <p>El párrafo Nunca abandones el sendero señalizado y no camines solo por la montaña</p>
+                <button type="button" onclick="document.getElementById('modal-seguridad').close()">Cerrar</button>
+            </dialog>
+    </section>
+    </main>
+    <!--Pie de pagina-->
+        <footer>
+        <p>Club Sendas de Extremadura &middot; Avda. de la Montaña, 12 &middot; 10001 Cáceres <br>
+            <a href="info@sendasdeextremadura.es">info@sendasdeextremadura.es</a>&middot;<a href="927 12 34 56">927 12 34 56</a>
+        </p>
+        <p>
+            <a href="docs/normas-club.pdf" download>Descargar las normas del club (PDF)</a> &middot;
+            <a href="https://turismoextremadura.com" target="_blank" rel="noopener noreferrer" title="Se abre en una pestaña nueva">Turismo de Extremadura</a>
+        </p>
+        <p><small>&copy; 2026 Sendas de Extremadura &middot; Última actualización: <time datetime="2026-11-09">9 de noviembre de 2026</time></small></p>
+        </footer>
+</body>
+</html>

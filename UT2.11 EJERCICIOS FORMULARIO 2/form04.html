@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1 · Solicitud de plaza. </title>
+    </head>
+    <body>
+        <form action="/procesar.psp" method="post" autocomplete="on">
+            <p>Selecciona el ciclo:</p>
+                <label><input type="radio" name="ciclo" value="DAM" checked>DAM</label><br>
+                <label><input type="radio" name="ciclo" value="DAM">DAW</label><br>
+                <label><input type="radio" name="ciclo" value="ASIR">ASIR</label><br>
+            <p>Modalidad que le interesa:</p>
+                <label><input type="checkbox" name="modalidad" value="Presencial">Presencial</label><br>
+                <label><input type="checkbox" name="modalidad" value="Semipresencial">Semipresencial</label><br>
+                <label><input type="checkbox" name="modalidad" value="A distancia">A distancia</label><br>
+            <p>
+                <label for="centro">Selecione un centro educativo:</label>
+                <select name="centro" id="centro">
+                    <optgroup label="Provincia Caceres">
+                        <option value="centro_cc1">Al-Qaceres</option>
+                        <option value="centro_cc2">IES Agora</option>
+                        <option value="centro_cc3">IES Jálama</option>
+                    </optgroup>
+                    <optgroup label="Provincia Badajoz">
+                        <option value="centro_ba1">IEs Castelar</option>
+                        <option value="centro_ba2">IES San Fernando</option>
+                        <option value="centro_ba3">IES Zubarán</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="observaciones">Observaciones:</label>
+                <textarea name="observaciones" id="observaciones"rows="4" cols="50"placeholder="Escribe aqui tus obsevacionjes (máximo 300caracteres)"></textarea>
+            </p>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

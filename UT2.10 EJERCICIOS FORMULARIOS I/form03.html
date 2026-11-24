@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio3 </title>
+    </head>
+    <body>
+        <form action="/procesar.psp" method="post" autocomplete="on">
+            <p>¿Qué módulos te gustan más? </p>
+                <label><input type="checkbox" name="LMSGI" value="LMSGI">LMSGI</label>
+                <br>
+                <label><input type="checkbox" name="Programación" value="Programación">Programación</label>
+                <br>
+                <label><input type="checkbox" name="BD" value="BD">Bases de datos</label>
+                <br>
+                <label><input type="checkbox" name="SI" value="SI">Sistemas informáticos</label>
+            <p>¿En qué turno estudias?</p>
+                <label><input type="radio" name="genero" value="mujer">Mañana</label>
+                <br>
+                <label><input type="radio" name="genero" value="hombre">Tarde</label>
+            <p>¿Has programado antes?</p>
+                <label><input type="radio" name="Si" value="Si">Si</label>
+                <br>
+                <label><input type="radio" name="No" value="No">No</label>
+                <br>
+                <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <!--¿qué pasa si a los dos radio del turno les pones un name distinto?-->
+        <!--Dejaran de comportarse como un grupo exclusibo y el usario podra elegir 
+        Mañana y Tarde a la vez lo cual rompe una logica de control de tipo radio. -->
+        <!--¿Y si los radio del turno y los de «¿Has programado antes?» comparten el mismo name?-->
+        <!-- El navegador considera los 4 botones como parte de un unico gran grupo significa que si marcas Mañana y marcas Si a si hemos 
+         programados antes la opcion Mañana se desmarcara automaticamente-->
+    </body>
+</html>

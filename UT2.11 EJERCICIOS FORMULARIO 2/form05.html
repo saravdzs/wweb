@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 2 · select o datalist. </title>
+    </head>
+    <body>
+        <h1>Inscripción en el torneo de ajedrez</h1>
+        <form action="/procesar.psp" method="post" autocomplete="on">
+            <p>
+            <label for="localidad">Localidad de referencia:</label><br>
+                <input id="localidad" name="localidad" list="lista-localidades">
+                    <datalist id="lista-localidades">
+                        <option value="Caceres"></option>
+                        <option value="Badajoz"></option>
+                        <option value="Merida"></option>
+                        <option value="Plasencia"></option>
+                        <option value="Don Benito"></option>
+                        <option value="Almendralejo"></option>
+                        <option value="Villanueva de la Serena"></option>
+                        <option value="Navalmoral de la Mata"></option>
+                        <option value="Zafra"></option>
+                        <option value="Montijo"></option>
+                    </datalist>
+            </p>
+            <p>
+                <label for="Categoría">Categoría:</label><br>
+                <select id="localidad" name="Categoría">
+                        <option value="Sub-12">Sub-12</option>
+                        <option value="Sub-14">Sub-14</option>
+                        <option value="Sub-16">Sub-16</option>
+                        <option value="Absoluta">Absoluta</option>
+                </select>
+            </p>
+            <p>
+                <label for="Navegador">Navegar del que juegas:</label><br>
+                <input id="localidad" name="localidad" list="lista-navegadores">
+                <details id="lista-navegadores">
+                    <option value="Google"></option>
+                    <option value="Mozilla"></option>
+                    <option value="Microsoft Edge"></option>
+                    <option value="Safari"></option>
+                </details>
+            </p>
+            <p>
+            <label for="Ritmo de juego preferido:">Ritmo de juego preferido:</label><br>
+            <label><input type="checkbox" name="Ritmo" value="Bala">Bala</label><br>
+            <label><input type="checkbox" name="Ritmo" value="Relámpago">Relámpago</label><br>
+            <label><input type="checkbox" name="Ritmo" value="Rápidas">Rápidas</label><br>
+            <label><input type="checkbox" name="Ritmo" value="Clásicas">Clásicas</label><br>
+            </p>
+            <input type="submit" value="Inscrivirse">
+        </form>
+    </body>
+</html>

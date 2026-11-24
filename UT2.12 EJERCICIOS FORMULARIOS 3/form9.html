@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 3 · Registro con validación completa. </title>
+    </head>
+    <body>
+        <form action="#" method="post"></form>
+            <fieldset>
+                <legend>Datos Cuenta </legend>
+                <!--Usuario-->
+                <label for="Usuario">Usuario</label>
+                <input type="text" id="Usuario" name="Usuario" pattern="^[a-z0-9]{4,12}$" title="Obligatorio, de 4 a 12 minúsculas o cifras"><br>
+                <br>
+
+                <!--Usuario-->
+                <label for="Correo">Correo</label>
+                <input type="email" id="Usuario" name="Usuario" required><br>
+                <br>
+
+                 <!--Contraseña-->
+                <label for="Contraseña">Contraseña</label>
+                <input type="password" id="Contraseña" name="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.\d).{8,}$"title="Obligatoria, mínimo 8 caracteres con al menos una mayúscula, una minúscula y una cifra"><br>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion Personal y Perfil</legend>
+                    <!--Fecha de nacimiento-->
+                    <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento" max="2010-12-31" required><br>
+                    <br>
+
+                    <!--Web o portfolio-->
+                    <label for="Web o portfolio">Web o portfolio</label>
+                    <input type="url" id="Web o portfolio" name="Web o portfolio"><br>
+                    <br>
+
+                    <!--Nivel de HTML-->
+                    <label for="Nivel de HTML">Nivel de HTML</label>
+                    <input type="range" id="Nivel de HTML" name="Nivel de HTML" min="1" max="5" value="3"><br>
+                    <br>
+
+                    <!--Acepto las condiciones-->
+                    <label>
+                        <input type="checkbox" name="Acepto_condiciones" required>Acepto las condiciones
+                    </label>
+            </fieldset>
+
+            <!--Botón de envío-->
+            <button type="submit">Enviar</button>
+       </form>
+    </body>
+</html>

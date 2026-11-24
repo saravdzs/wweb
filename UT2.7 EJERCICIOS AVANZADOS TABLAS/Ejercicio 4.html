@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4 - Comparativa de Portátiles</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        img {
+            width: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+        }
+        .footer-note {
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Elige tu portátil</h1>
+    <p>Comparamos tres equipos aptos para el ciclo. Todos permiten instalar VS Code, un servidor local y una máquina virtual ligera.</p>
+
+    <table>
+        <caption>Portátiles recomendados · Curso 2026-27</caption>
+        <thead>
+            <tr>
+                <th>Equipo</th>
+                <th>Procesador</th>
+                <th>RAM</th>
+                <th>Almacenamiento</th>
+                <th>Pantalla</th>
+                <th>Peso</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Fila 1: Aula 14 -->
+            <tr>
+                <td>
+                    <a href="https://ejemplo-tienda-real.com" target="_blank">
+                        <img src="img/Captura de pantalla_2026-10-20_16-41-02.png" alt="Portátil Aula 14">
+                    </a>
+                    <br>Aula 14
+                </td>
+                <td>6 núcleos, 2,5 GHz</td>
+                <td>8 GB</td>
+                <td>256 GB SSD</td>
+                <td>14 pulgadas, 1920 × 1080</td>
+                <td>1,4 kg</td>
+                <td>549 €</td>
+            </tr>
+            <!-- Fila 2: Dev 15 Pro -->
+            <tr>
+                <td>
+                    <a href="https://ejemplo-tienda-real.com" target="_blank">
+                        <img src="img/Captura de pantalla_2026-10-20_16-41-34.png" alt="Portátil Dev 15 Pro">
+                    </a>
+                    <br>Dev 15 Pro
+                </td>
+                <td>8 núcleos, 3,2 GHz</td>
+                <td>16 GB</td>
+                <td>512 GB SSD</td>
+                <td>15,6 pulgadas, 1920 × 1080</td>
+                <td>1,8 kg</td>
+                <td>849 €</td>
+            </tr>
+            <!-- Fila 3: Ultra 13 -->
+            <tr>
+                <td>
+                    <a href="https://ejemplo-tienda-real.com" target="_blank">
+                        <img src="img/Captura de pantalla_2026-10-20_16-41-45.png" alt="Portátil Ultra 13">
+                    </a>
+                    <br>Ultra 13
+                </td>
+                <td>8 núcleos, 3,0 GHz</td>
+                <td>32 GB</td>
+                <td>1 TB SSD</td>
+                <td>13,3 pulgadas, 2560 × 1600</td>
+                <td>1,1 kg</td>
+                <td>1.299 €</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7" class="footer-note">
+                    Precios con IVA incluido. Modelo recomendado por el departamento: <span class="highlight">Dev 15 Pro</span>.
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
+

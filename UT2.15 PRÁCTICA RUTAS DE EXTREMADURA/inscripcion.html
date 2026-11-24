@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUTAS</title>
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logotipo">
+        <h1>Sendas de Extremadura</h1>
+        <p>club de senderismo desde 2015 </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="rutas.html">Rutas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Hazte socio</h2>
+        <p>Rellena el formulario. Los campos marcados conson obligatorios.</p>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <legend>Datos personales</legend>
+                    <label>Nombre y apellidos:</label>
+                    <br>
+                    <input type="text" id="nombre" name="nombre" maxlength="80" placeholder="Ana García López">
+                    <br>
+                    <label>DNI</label>
+                    <br>
+                    <input type="text" pattern="[0-9]{8}[A-Za-z]" title="8 números y una letra">
+                    <br>
+                    <label>Fecha de nacimiento:</label>
+                    <br>
+                    <input type="date" id="nacimiento" name="nacimiento" min="1940-01-01", max="2018-12-31" required>
+                    <br>
+                    <label>Correo electrónico</label>
+                    <br>
+                    <input type="email">
+
+    </main>
+
+
+
+
+
+    <!--Pie de pagina-->
+    <footer>
+        <p>Club Sendas de Extremadura &middot; Avda. de la Montaña, 12 &middot; 10001 Cáceres <br>
+            <a href="info@sendasdeextremadura.es">info@sendasdeextremadura.es</a>&middot;<a href="927 12 34 56">927 12 34 56</a>
+        </p>
+        <p>
+            <a href="docs/normas-club.pdf" download>Descargar las normas del club (PDF)</a> &middot;
+            <a href="https://turismoextremadura.com" target="_blank" rel="noopener noreferrer" title="Se abre en una pestaña nueva">Turismo de Extremadura</a>
+        </p>
+        <p><small>&copy; 2026 Sendas de Extremadura &middot; Última actualización: <time datetime="2026-11-09">9 de noviembre de 2026</time></small></p>
+    </footer>
+</body>
+</html>

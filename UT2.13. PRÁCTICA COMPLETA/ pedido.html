@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Venta solidaria de 1º DAM/DAW/ASIR</title>
+        <style>
+            body{
+                font-family: Arial,sans-serif;
+                color: #22313f;
+                background-color: #f5f7fa;
+                margin: 20px;
+            }
+            h1,h2,h3,h4{
+                color: #1f6f8b;
+            }
+            form{
+                width: 50%;
+                margin-bottom: 20px;
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                background-color: #ffffff;
+                border: #c9d3de;
+                margin-bottom: 20px;
+            }
+            table th ,table td{
+                border: 1px solid #c9d3de;
+                padding: 10px ;
+                vertical-align: middle;
+            }
+            table thead tr{
+                background-color:  #eef3f8;
+            }
+            table img{
+                width: 150px;
+                height: 150px;
+                display: block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Venta solidaria de 1º DAM/DAW/ASIR</h1>
+        <p>Todo lo recaudado destina al banco de alimentos</p>
+        <h2>Catalo de productos</h2>
+
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="taza.svg" alt="Taza solidaria"></td>
+                        <td>
+                            <label for="taza solidaria"><strong>Taza solidaria</strong><br>Ceremica, 350 ml.Apta para lavavajillas</label>
+                        </td>
+                        <td>8,00€</td>
+                        <td>
+                            <input type="number" min="0" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="sudadera.png" alt="Sudadera solidaria"></td>
+                        <td>
+                            <label for="Sudadera solidaria"><strong>Sudadera con capucha</strong><br>Aldodon organico. Tallas desde la S a la XL</label>
+                        </td>
+                        <td>22,00€</td>
+                        <td>
+                            <input type="number" min="0" max="10">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Gastos de envio (Gratis a partir de 30 euros)</td>
+                        <td colspan="2" style="text-align: right;"> 3,50€</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <fieldset>
+                <legend>Datos de Entrega</legend>
+                <div class="form-group">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Nombre" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="teléfono">Teléfono</label>
+                    <input type="tel" id="teléfono" name="teléfono">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="dirección">Dirección</label>
+                    <input type="tel" id="dirección" name="dirección">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="cp">código postal</label>
+                    <input type="text" id="código postal" name="código postal" pattern="^(06|10)\d{3}$" title="solo puede empezar por 06 o 10 ,seguido de 3 númenor">
+                </div>
+                <br>
+                 <div class="form-group">
+                    <label for="talla_sudadera">Talla Sudadera:</label>
+                   <select name="talla_sudadera" id="talla_sudadera">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="S">L</option>
+                    <option value="XL">XL</option>
+                   </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="fecha_entrega">Fecha de Entrega:</label>
+                    <input type="date" id="fecha_entrega" name="fecha_entrega" min="2026-12-01" value="2026-12-10" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Forma de pago</legend>
+                    <label><input type="radio" name="Bizum" value="Bizum">Bizum</label>
+                    <label><input type="radio" name="Transferencia" value="Transferencia">Transferencia</label>
+                    <label><input type="radio" name="Efectivo al recoger" value="Efectivo al recoger">Efectivo al recoger</label>
+            </fieldset>
+            <fieldset>
+                <legend>Opciones extra</legend>
+                    <label>
+                        <input type="checkbox" name="Envolver" value="Envolver">Envolver para regalo
+                    </label>
+                    <br>
+                    <label>Color del lazo:
+                        <input type="color" name="color_lazo" value="#ff0000">
+                    </label>
+            </fieldset>
+            <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="privacidad" id="privacidad" value="si" required>Acepto los terminos de seguridad
+                    </label>
+                   <button type="button" id="boton_abrir">Leer la politica</button>
+            </div>
+                <button type="submit">Enviar pedido</button>
+            <dialog id="politica de privacidad">
+
+            </dialog>
+        </form>
+        <table>
+            <div class="faq-container">
+                <tr>
+                    <th>
+                        <details name="faq">
+                            <summary>¿Cuándo recibiré mi pedido?</summary>
+                            <div class="faq-content">En un plazo de 5 días laborables desde que confirmamos el pago. Si eliges una fecha de entrega, lo llevamos ese dia.</div>
+                        </details>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <details name="faq">
+                            <summary>¿Puedo devolver un producto?</summary>
+                            <div class="faq-content">Sí, durante 14 dias naturales desde que lo recibes, siempre que esté sin usar y en su embalaje. Te devolvemos el importe por el mismo medio de pago.</div>
+                        </details>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <details name="faq">
+                            <summary>¿Y si la talla de la sudadera no me vale?</summary>
+                            <div class="faq-content">Te la cambiamos por otra talla sin coste, en el mismo plazo de 14 días.</div>
+                        </details>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                         <details name="faq">
+                            <summary>¿Puedo recogerlo en el instituto?</summary>
+                            <div class="faq-content">Si. Elige: "Efectivo al recoger" y pasa por la conserjería de lunes a viernes, de 9:00 a 14:00. No pagas gastos de envio.</div>
+                        </details>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <details name="faq">
+                            <summary>¿A dónde va el dinero?</summary>
+                            <div class="faq-content">Întegramente al banco de alimentos de la localidad. Al final del curso publicamos el total recaudado.</div>
+                        </details>
+                    </th>
+                </tr>
+        </div> 
+        </table> 
+    </body>
+</html>

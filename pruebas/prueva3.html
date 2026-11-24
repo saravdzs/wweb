@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de inscripción como socio del club Sendas de Extremadura.">
+    <title>Inscripción &middot; Sendas de Extremadura</title>
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- ===== CABECERA ===== -->
+    <header>
+        <img src="imagenes/logo.png" alt="Logotipo del club Sendas de Extremadura" width="100" height="100">
+        <h1>Sendas de Extremadura</h1>
+        <p>Club de senderismo desde 2015</p>
+    </header>
+
+    <!-- ===== NAVEGACIÓN ===== -->
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="rutas.html">Rutas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main>
+        <h2>Hazte socio</h2>
+        <p>Rellena el formulario. Los campos marcados con * son obligatorios.</p>
+
+        <!-- ===== FORMULARIO DE INSCRIPCIÓN ===== -->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="temporada" value="2026-2027">
+
+            <!-- ===== DATOS PERSONALES ===== -->
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <p>
+                    <label for="nombre">Nombre y apellidos *</label><br>
+                    <input type="text" id="nombre" name="nombre" maxlength="80" placeholder="Ana García López" required>
+                </p>
+
+                <p>
+                    <label for="dni">DNI *</label><br>
+                    <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Z]" title="8 números y una letra" required>
+                </p>
+
+                <p>
+                    <label for="nacimiento">Fecha de nacimiento *</label><br>
+                    <input type="date" id="nacimiento" name="nacimiento" min="1940-01-01" max="2018-12-31" required>
+                </p>
+
+                <p>
+                    <label for="email">Correo electrónico *</label><br>
+                    <input type="email" id="email" name="email" placeholder="ana@ejemplo.com" required>
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono móvil</label><br>
+                    <input type="tel" id="telefono" name="telefono" pattern="[67][0-9]{8}" title="9 cifras empezando por 6 o 7">
+                </p>
+
+                <p>
+                    <label for="localidad">Localidad</label><br>
+                    <input type="text" id="localidad" name="localidad" list="lista-localidades">
+                    <datalist id="lista-localidades">
+                        <option value="Badajoz">
+                        <option value="Cáceres">
+                        <option value="Mérida">
+                        <option value="Plasencia">
+                        <option value="Don Benito">
+                    </datalist>
+                </p>
+            </fieldset>
+
+            <!-- ===== PREFERENCIAS DE RUTA ===== -->
+            <fieldset>
+                <legend>Preferencias de ruta</legend>
+
+                <fieldset>
+                    <legend>Nivel de experiencia *</legend>
+                    <input type="radio" id="nivel-iniciacion" name="nivel" value="iniciacion" required>
+                    <label for="nivel-iniciacion">Iniciación</label>
+
+                    <input type="radio" id="nivel-medio" name="nivel" value="medio">
+                    <label for="nivel-medio">Medio</label>
+
+                    <input type="radio" id="nivel-avanzado" name="nivel" value="avanzado">
+                    <label for="nivel-avanzado">Avanzado</label>
+                </fieldset>
+
+                <p>
+                    <label for="primera-salida">Primera salida *</label><br>
+                    <select id="primera-salida" name="primera_salida" required>
+                        <option value="" disabled selected>Elige una ruta</option>
+                        <optgroup label="Provincia de Cáceres">
+                            <option value="monfrague">Monfragüe (noviembre)</option>
+                            <option value="villuercas">Villuercas (enero)</option>
+                            <option value="gata">Sierra de Gata (febrero)</option>
+                            <option value="jerte">Valle del Jerte (marzo)</option>
+                        </optgroup>
+                        <optgroup label="Provincia de Badajoz">
+                            <option value="cornalvo">Cornalvo (diciembre)</option>
+                            <option value="tentudia">Tentúdia (abril)</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <fieldset>
+                    <legend>Actividades que te interesan</legend>
+                    <input type="checkbox" id="act-aves" name="actividades" value="aves">
+                    <label for="act-aves">Observación de aves</label>
+
+                    <input type="checkbox" id="act-foto" name="actividades" value="fotografia">
+                    <label for="act-foto">Fotografía</label>
+
+                    <input type="checkbox" id="act-nocturna" name="actividades" value="nocturnas">
+                    <label for="act-nocturna">Rutas nocturnas</label>
+                </fieldset>
+
+                <p>
+                    <label for="acompanantes">Número de acompañantes</label><br>
+                    <input type="number" id="acompanantes" name="acompanantes" min="0" max="3" step="1" value="0">
+                </p>
+
+                <p>
+                    <label for="forma">Forma física (1 = baja, 10 = excelente)</label><br>
+                    <input type="range" id="forma" name="forma" min="1" max="10" value="5">
+                </p>
+
+                <p>
+                    <label for="color">Color de tu camiseta del club</label><br>
+                    <input type="color" id="color" name="color" value="#2e5e3e">
+                </p>
+            </fieldset>
+
+            <!-- ===== OTROS DATOS ===== -->
+            <fieldset>
+                <legend>Otros datos</legend>
+
+                <p>
+                    <label for="certificado">Certificado médico (PDF)</label><br>
+                    <input type="file" id="certificado" name="certificado" accept=".pdf">
+                </p>
+
+                <p>
+                    <label for="observaciones">Alergias u observaciones</label><br>
+                    <textarea id="observaciones" name="observaciones" rows="4" cols="50" maxlength="300" placeholder="Máximo 300 caracteres"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="normas" name="normas" value="acepto" required>
+                    <label for="normas">He leído y acepto las <a href="docs/normas-club.pdf" target="_blank" rel="noopener noreferrer">normas del club</a> *</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Enviar inscripción</button>
+                <button type="reset">Borrar</button>
+            </p>
+        </form>
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer>
+        <p>
+            Club Sendas de Extremadura &middot; Avda. de la Montaña, 12 &middot; 10001 Cáceres<br>
+            <a href="mailto:info@sendasdeextremadura.es">info@sendasdeextremadura.es</a> &middot; <a href="tel:+34927123456">927 12 34 56</a>
+        </p>
+        <p>
+            <a href="docs/normas-club.pdf" download>Descargar las normas del club (PDF)</a> &middot;
+            <a href="https://turismoextremadura.com" target="_blank" rel="noopener noreferrer" title="Se abre en una pestaña nueva">Turismo de Extremadura</a>
+        </p>
+        <p><small>&copy; 2026 Sendas de Extremadura &middot; Última actualización: <time datetime="2026-11-09">9 de noviembre de 2026</time></small></p>
+    </footer>
+
+</body>
+</html>

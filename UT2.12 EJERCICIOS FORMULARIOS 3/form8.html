@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 2 · Escribe el patrón </title>
+    </head>
+    <body>
+        <form action="#" method="post"></form>>
+            <!--Código postal de Extremadura-->
+            <label for="Código postal de Extremadura">Código postal de Extremadura</label>
+            <input type="text" id="cp" name="cp" pattern="^(06|10)\d{3}$" title="Debe contener 5 dígitos y que empiece por 06 o 10"><br>
+            <br>
+
+            <!--Móvil español -->
+            <label for="Móvil español">Móvil español</label>
+            <input type="tel" id="Móvil" name="Móvil" pattern="^(67)\d{8}$" title="Debe contener 9 dígitos y que empiece por 6 o 7"><br>
+            <br>
+
+            <!--DNI-->
+            <label for="DNI">DNI</label>
+            <input type="text" id="DNI" name="DNI" pattern="^\d{8}[A-Z]$" title="Formato:8 cifras y una letra mayúscula"><br>
+            <br>
+
+            <!--Matrícula de coche-->
+            <label for="Matrícula de coche ">Matrícula de coche </label>
+            <input type="text" id="Matrícula de coche " name="Matrícula de coche " pattern="^\d{4}[B-DF-HJ-NP-TV-Z]{3}$" title="4 cifras y 3 consonantes mayúsculas, sin vocales"><br>
+            <br>
+
+            <!--Nombre de usuario-->
+            <label for="Nombre de usuario">Nombre de usuario</label>
+            <input type="text" id="Nombre de usuario" name="Nombre de usuario" pattern="^[a-z0-9-]{4,12}$" title="4 cifras y 3 consonantes mayúsculas, sin vocales"><br>
+            <br>
+
+            <!--Grupo de clase-->
+            <label for="Grupo de clase">Grupo de clase</label>
+            <input type="text" id="Grupo de clase" name="Grupo de clase" pattern="^[12](DAM|DAW|ASIR)" title="1 o 2, seguido de DAM,DAW o ASIR"><br>
+            <br>
+            <!--Botón de envío-->
+            <input type="button" value="Enviar">
+       </form>
+    </body>
+</html>

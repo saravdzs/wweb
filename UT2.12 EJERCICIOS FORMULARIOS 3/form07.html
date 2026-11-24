@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1 · Alta en la plataforma del centro. </title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <!--Código de centro-->
+            <label for="Código de centro">Código de centro</label>
+            <input type="text" id="Código" name="Código" value="10012345" readonly><br>
+            <br>
+
+            <!--Curso académico-->
+            <label for="Curso académico">Curso académico</label>
+            <input type="text" id="Curso" name="Curso" value="2026-27" disabled><br>
+            <br>
+
+            <!--Usuario-->
+            <label for="Usuario">Usuario</label>
+            <input type="text" id="Usuario" name="Usuario" maxlength="15" size="20" required autofocus><br>
+            <br>
+
+            <!--Correo-->
+            <label for="Correo">Correo</label>
+            <input type="email" id="Correo" name="Correo" placeholder="nombre@educarex.es"><br>
+            <br>
+
+            <!--Contraseña-->
+            <label for="Contraseña">Contraseña</label>
+            <input type="password" id="Contraseña" name="Contraseña" autocomplete="off" required><br>
+            <br>
+
+            <!--Edad-->
+            <label for="Edad">Edad</label>
+            <input type="number" id="Edad" name="Edad" min="16" max="99"><br>
+            <br>
+
+            <!--Horas de estudio semanales-->
+            <label for="Horas de estudio semanales">Horas de estudio semanales</label>
+            <input type="range" id="Horas estudio" name="Horas estudio" min="0" max="20" step="2" value="10"><br>
+            <br>
+
+            <!--Recibir avisos por correo-->
+            <label for="Recibir avisos por correo">Recibir avisos por correo</label>
+            <input type="checkbox" id="avisos por correo" name="avisos por correo"><br>
+            <br>
+
+            <!--Botón de envío-->
+            <input type="button" value="Enviar">
+
+        </form>
+    </body>
+</html>

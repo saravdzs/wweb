@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+    </head>
+    <body>
+        <!-- El caption deberia estar al principio -->
+        <table>
+        <tr>
+        <!-- El td esta mal deberia ser un /th -->
+        <th>Ciudad</td>
+        <th>Habitantes (aprox.)</th>
+        </tr>
+        <caption>Ciudades de Extremadura</caption>
+        <!-- Aqui deberia ir un tr -->
+        <td>Badajoz</td><td>150 000</td>
+        <tr>
+        <td>Cáceres</td><td>95 000</td>
+        </tr>
+        <tr>
+        <td>Mérida</td><td>60 000</td>
+        <!-- El td esta mal deberia ser un /tr -->
+        </td>
+        </table>
+    </body>
+    
+</html>

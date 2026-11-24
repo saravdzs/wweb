@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <rect width="300" height="300" fill="#eef3f8"/>
+  <ellipse cx="140" cy="250" rx="95" ry="14" fill="#d5dde6"/>
+  <path d="M215 120 q55 0 55 45 t-55 45" fill="none" stroke="#ffffff" stroke-width="18"/>
+  <path d="M215 120 q55 0 55 45 t-55 45" fill="none" stroke="#c9d3de" stroke-width="18" stroke-dasharray="0 0" opacity="0.35"/>
+  <rect x="60" y="90" width="160" height="160" rx="14" fill="#ffffff" stroke="#c9d3de" stroke-width="3"/>
+  <ellipse cx="140" cy="92" rx="80" ry="12" fill="#f4f7fa" stroke="#c9d3de" stroke-width="3"/>
+  <text x="140" y="170" font-family="monospace" font-size="30" font-weight="bold" text-anchor="middle" fill="#1f6f8b">&lt;/&gt;</text>
+  <text x="140" y="205" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#1f6f8b">1º DAM</text>
+  <path d="M110 70 q10 -15 0 -30 M140 70 q10 -15 0 -30 M170 70 q10 -15 0 -30" fill="none" stroke="#b7c3cf" stroke-width="4" stroke-linecap="round"/>
+</svg>

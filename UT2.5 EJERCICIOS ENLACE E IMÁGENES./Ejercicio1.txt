@@ -1,0 +1,8 @@
+<a href="index.html">Inicio</a> Esta escrito corrrectamente
+<img src="img/logo.png"> le falta el atributo alt
+<a href="#Equipo">Ver equipo</a> 
+<h2 id="equipo">Equipo</h2>
+<a href="www.wikipedia.org" target="blank">Wikipedia</a> falta https
+<a href="mailto: info@miportfolio.es">Escríbenos</a>  Esta bien 
+<img src="../img/galeria/Playa.JPG" alt="imagen" width="300px"> alt es demasiado  descriptivo
+<a href="../docs/temario.pdf" download=temario LMSGI.pdf>Temario</a>
